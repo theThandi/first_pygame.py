@@ -128,6 +128,7 @@ def red():
             )
             print_pause("They grab you as your material body turns to dust")
             lose()
+            break
         else:
             print_pause("Thems not the rules.")
 
@@ -140,6 +141,7 @@ def win():
         if replay_answer == "yes":
             choice_one()
         elif replay_answer == "no":
+            print_pause("Okay fine bye")
             break
         else:
             print_pause("but like...do you wanna play again?")
@@ -153,6 +155,7 @@ def lose():
         if replay_answer == "yes":
             choice_one()
         elif replay_answer == "no":
+            print_pause("Okay fine bye")
             break
         else:
             print_pause("Accept defeat, bitch, but like...do you wanna play again?")
@@ -197,8 +200,10 @@ def choice_one():
         elif first_answer == "red":
             red()
             break
+        # Easter Egg 1
         elif first_answer == "snoek":
             snoek()
+        # Easter Egg 2
         elif first_answer == "patate":
             patate()
         else:
